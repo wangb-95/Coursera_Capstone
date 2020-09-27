@@ -7,4 +7,9 @@ For an accurate prediction of the magnitude of damage caused by accidents, they 
   4. Speeding
   5. The consequence of accidents : Fatalities, Injuries, etc
 
-The data is very complet and will be used so that we can determine which attributes are most common in traffic accidents in order to target prevention at these high-incidence points.
+However, for this case study, not all the attributes are useful as the main objective is to predict an accident’s probability and severity. Therefore, the Dataset needs deep understanding and analysis before choosing the right attributes to reach our goal.
+
+For example, SDOTCOLNUM, X, Y, LOCATION, INCDTTM, INCDATE, REPORTNO, COLDETKEY, INCKEY and OBJECTID are features that give descriptive and detailed information about an accident, and are then not relevant to predict the severity of an accident in general.
+
+Moreover, EXCEPTRSNCODE, EXCEPTRSNDESC, PEDROWNOTGRNT, SPEEDING, INATTENTIONIND and INTKEY have a high number of missing data that would skew and bias our predictive model.
+After selecting the appropriate features, the new Dataset is balanced and preprocessed before feeding it to a supervised machine learning model that will learn to predict in the future the probability of a car accident.
